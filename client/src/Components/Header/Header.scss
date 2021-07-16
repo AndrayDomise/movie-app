@@ -1,0 +1,23 @@
+@use "../../partials/partial" as *;
+
+.container__nav{
+    background-color: $graphite;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 32px;
+    padding: .5em;
+    
+    @include tablet{
+        align-items: center;
+        height: 80px;
+        padding: 16px 0px;
+    }
+    @include desktop{
+        align-items: center;
+        height: 80px;
+        padding: 24px 0px;
+    }
+}

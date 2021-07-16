@@ -1,0 +1,64 @@
+$black: #323232;
+$movies-blue: #0095FF;
+$white: #FFF;
+$silver: #AFAFAF;
+$movies-blue-dark: #0065AD;
+$mercury: #E1E1E1;
+$alabaster: #FAFAFA;
+$graphite: #232940;
+$tablet-start: 768px;
+$desktop-start: 1280px;
+
+html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, ol, ul, li, header, nav, main, section, blockquote, figcaption, footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+@mixin tablet {
+    @media screen and (min-width: $tablet-start) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: $desktop-start) {
+        @content;
+    }
+}
+
+@mixin mobile-padding {
+    padding: 0 1rem;
+}
+
+@mixin tablet-padding {
+    padding: 0 2rem;
+}
+
+@mixin desktop-padding {
+    padding: 0 2.5rem;
+}
+
+@mixin max-size {
+    width: 1020px;
+    margin: 0 auto;
+}
+
+body{
+    margin: 0;
+}
+
+ul{list-style-type: none;
+}

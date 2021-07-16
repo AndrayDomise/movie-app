@@ -1,0 +1,66 @@
+@use '../../partials/partial' as *;
+
+.container{
+
+    display: flex;
+    flex-direction: column;
+    padding-top: 16px;
+    align-content: center;
+    width: 288px;
+    padding-right: 16px;
+    padding-left: 16px;
+    margin-right: auto;
+    margin-left: auto;
+    
+
+    @include tablet() {
+        width: 720px;
+        padding-right: 24px;
+        padding-left: 24px;
+        padding: 2em 9em;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &__img{
+            width: 32%;
+            object-fit: cover;
+            margin-bottom: 0;
+            padding-bottom: 0%;
+            position: relative;
+        }
+    }
+
+    @include desktop() {
+        width: 1080px;
+        padding-right: 180px;
+        padding-left: 180px;
+        padding: 2em 9em;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &__img{
+            width: 32%;
+            object-fit: cover;
+            margin-bottom: 0;
+            padding-bottom: 0%;
+            position: relative;
+        }
+    }
+}
+
+.moviePosters{
+    width: 200px;
+    height: 300px;
+    filter: drop-shadow(10px 10px 4px #000000);
+}
+
+.container__gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 24px;
+    margin: 0 auto;
+    position: relative;
+}
